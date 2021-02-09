@@ -77,6 +77,6 @@ app.get('/sign-s3', (req, res) => {
  * a way that suits your application.
  */
 app.post('/save-details', (req, res) => {
-    res.write(JSON.stringify(req));
-    res.end();
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify("Request Success"));
 });
