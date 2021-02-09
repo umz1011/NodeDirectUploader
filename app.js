@@ -32,7 +32,7 @@ aws.config.region = 'us-east-1';
 /*
  * Load the S3 information from the environment variables.
  */
-const S3_BUCKET = 'heroku-sofe4630';
+const S3_BUCKET = process.env.S3_BUCKET;
 
 /*
  * Respond to GET requests to /account.
